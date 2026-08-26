@@ -5,249 +5,463 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Me - Meshack Ogonna</title>
+    <title>Contact Me - Meshack Ogonna Ugwuishi</title>
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 
-<body>
+<body class="contact-page">
 
-    <!-- HEADER -->
+
+    <!-- =================================================
+         HEADER / NAVIGATION
+    ================================================== -->
+
     <header>
 
-         <!-- NAVIGATION -->
-     <header>
         <nav class="navbar">
-            <!-- Logo -->
-         <div class="logo">
-            <a href="index.html">MU</a>
-         </div>
-         
-      
 
-         <!-- Navigation Links -->
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+            <!-- LOGO -->
 
-          <!-- Login -->
-           <div class="login-container">
-            <a href="contact.html" class="login-btn">Hire Me</a>
-           </div>
-        </nav>
-
-</header>
-    <!-- MAIN CONTENT -->
-    <main>
-         <!-- HERO SECTION -->
-          <!-- CONTACT INFORMATION -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-               <h1>Contact Me</h1>
-               <p>
-                Hello, I'm Meshack Ogonna Ugwuishi.
-               </p>
-
-               <p>
-                 I would love to hear from you. If you have a project,
-                business opportunity, collaboration or simply want to
-                connect, feel free to reach out to me.
-               </p>
+            <div class="logo">
+                <a href="index.html">MU</a>
             </div>
-        </section>
-
-        <!-- CONTACT INFORMATION -->
-        <section>
-
-            <h2>Get In Touch</h2>
-
-            <address>
-
-                <p>
-                    <strong>Email:</strong>
-                    <a href="hogonna@email.com">
-                        hogonna@email.com
-                    </a>
-                </p>
-
-                <p>
-                    <strong>Phone:</strong>
-                    <a href="tel:+2348086910778">
-                        +234 808 691 0778
-                    </a>
-                </p>
-
-                <p>
-                    <strong>Location:</strong>
-                    Enugu, Nigeria
-                </p>
-
-            </address>
-
-        </section>
 
 
-        <!-- SOCIAL MEDIA -->
-        <section>
+            <!-- NAVIGATION LINKS -->
 
-            <h2>Connect With Me</h2>
-
-            <ul>
+            <ul class="nav-links">
 
                 <li>
-                    <a href="https://www.facebook.com/share/1d7jnBasET/?mibextid=wwXIfr"
-                       target="_blank">
-                        Facebook
+                    <a href="index.html">
+                        Home
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://www.instagram.com/meshackugwuishi?igsh=MWNydzEwaDFwc21peQ%3D%3D&utm_source=qr"
-                       target="_blank">
-                        Instagram
+                    <a href="about.html">
+                        About
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://x.com/meshackogonna?s=11"
-                       target="_blank">
-                        X (Twitter)
+                    <a href="projects.html">
+                        Projects
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://www.linkedin.com/in/meshack-ogonna-ugwuishi-6b0654395?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                       target="_blank">
-                        LinkedIn
+                    <a href="contact.html" class="active">
+                        Contact
                     </a>
                 </li>
 
             </ul>
 
-        </section>
+
+            <!-- HIRE ME BUTTON -->
+
+            <div class="login-container">
+
+                <a href="contact.html" class="login-btn">
+                    Hire Me
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
 
 
-        <!-- CONTACT FORM -->
-        <section>
 
-            <h2>Send Me a Message</h2>
+    <!-- =================================================
+         MAIN CONTENT
+    ================================================== -->
 
-            <form action="#" method="post">
-
-                <!-- NAME -->
-                <div>
-                    <label for="name">
-                        Full Name:
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Enter your name"
-                        required>
-                </div>
-
-                <br>
+    <main>
 
 
-                <!-- EMAIL -->
-                <div>
-                    <label for="email">
-                        Email Address:
-                    </label>
+        <!-- =================================================
+             CONTACT HERO
+        ================================================== -->
 
-                    <br>
+        <section class="contact-hero">
 
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        required>
-                </div>
+            <div class="contact-hero-content">
 
-                <br>
+                <p class="section-label">
+                    GET IN TOUCH
+                </p>
 
+                <h1>
+                    Contact Me
+                </h1>
 
-                <!-- SUBJECT -->
-                <div>
-                    <label for="subject">
-                        Subject:
-                    </label>
+                <p>
+                    Have a project, idea or opportunity you'd
+                    like to discuss? Feel free to reach out.
+                    I would be happy to hear from you.
+                </p>
 
-                    <br>
-
-                    <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        placeholder="What is your message about?"
-                        required>
-                </div>
-
-                <br>
-
-
-                <!-- MESSAGE -->
-                <div>
-                    <label for="message">
-                        Message:
-                    </label>
-
-                    <br>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="8"
-                        cols="40"
-                        placeholder="Write your message here..."
-                        required></textarea>
-                </div>
-
-                <br>
-
-
-                <!-- SUBMIT BUTTON -->
-                <button type="submit">
-                    Send Message
-                </button>
-
-            </form>
+            </div>
 
         </section>
 
 
-        <!-- OTHER INFORMATION -->
-        <section>
 
-            <h2>Let's Work Together</h2>
+        <!-- =================================================
+             CONTACT SECTION
+        ================================================== -->
+
+        <section class="contact-section">
+
+            <div class="contact-container">
+
+
+                <!-- =================================================
+                     CONTACT INFORMATION
+                ================================================== -->
+
+                <div class="contact-information">
+
+                    <p class="section-label">
+                        CONTACT INFORMATION
+                    </p>
+
+                    <h2>
+                        Let's Talk
+                    </h2>
+
+                    <p class="contact-description">
+                        Whether you want to discuss a web
+                        development project, collaboration,
+                        football-related opportunity or simply
+                        connect with me, you can reach me through
+                        the information below.
+                    </p>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            @
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Email
+                            </h3>
+
+                            <a href="mailto:hogonna@gmail.com">
+                                hogonna@gmail.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- LOCATION -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            📍
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Location
+                            </h3>
+
+                            <p>
+                                Enugu, Nigeria
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- AVAILABILITY -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Availability
+                            </h3>
+
+                            <p>
+                                Available for projects,
+                                collaborations and opportunities.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     CONTACT FORM
+                ================================================== -->
+
+                <div class="contact-form-container">
+
+                    <h2>
+                        Send Me a Message
+                    </h2>
+
+                    <p>
+                        Fill out the form below and I'll get
+                        back to you as soon as possible.
+                    </p>
+
+
+                    <form
+                        class="contact-form"
+                        action="#"
+                        method="post">
+
+
+                        <!-- NAME -->
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required>
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+
+                        <!-- SUBJECT -->
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What is your message about?"
+                                required>
+
+                        </div>
+
+
+                        <!-- MESSAGE -->
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Write your message here..."
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- SUBMIT -->
+
+                        <button
+                            type="submit"
+                            class="contact-submit">
+
+                            Send Message
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CALL TO ACTION
+        ================================================== -->
+
+        <section class="contact-cta">
+
+            <h2>
+                Let's Build Something Together
+            </h2>
 
             <p>
-                Whether you are interested in web development, technology,
-                football projects, digital media or collaboration, I am
-                always open to meaningful opportunities.
+                I am always open to learning, collaborating
+                and working on meaningful projects.
             </p>
 
+            <a
+                href="mailto:hogonna@gmail.com"
+                class="cta-button">
+
+                Email Me
+
+            </a>
+
         </section>
+
 
     </main>
 
 
-    <!-- FOOTER -->
-    <footer>
 
-        <p>
-            &copy; 2026 Meshack Ogonna Ugwuishi. All Rights Reserved.
-        </p>
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <!-- FOOTER ABOUT -->
+
+            <div class="footer-about">
+
+                <h3>
+                    Meshack Ogonna Ugwuishi
+                </h3>
+
+                <p>
+                    Computer Science student, web developer,
+                    football administrator and digital
+                    content creator.
+                </p>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-contact">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    <a href="mailto:hogonna@gmail.com">
+                        hogonna@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    Enugu, Nigeria
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Meshack Ogonna Ugwuishi.
+                All Rights Reserved.
+            </p>
+
+        </div>
 
     </footer>
+
 
 </body>
 

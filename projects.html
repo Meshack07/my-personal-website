@@ -6,172 +6,401 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Projects - Meshack Ogonna</title>
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 
-<body>
+<body class="projects-page">
 
-     <!-- NAVIGATION -->
-     <header>
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header>
+
         <nav class="navbar">
-            <!-- Logo -->
-         <div class="logo">
-            <a href="index.html">MU</a>
-         </div>
-         
-      
 
-         <!-- Navigation Links -->
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-
-          <!-- Login -->
-           <div class="login-container">
-            <a href="contact.html" class="login-btn">Hire Me</a>
-           </div>
-        </nav>
-
-</header>
-
-    <!-- MAIN CONTENT -->
-    <main>
-        <!-- HERO SECTION -->
-         <!-- PAGE INTRODUCTION -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-               <h1>My Projects</h1>
-               <p>
-                Welcome to my projects page. Here you can explore some of
-                the projects and organizations I have worked on or contributed
-                to.
-               </p>
+            <!-- LOGO -->
+            <div class="logo">
+                <a href="index.html">MU</a>
             </div>
-        </section>
-
-        <!-- NSUKKA LEGENDS PROJECT -->
-        <section>
-
-            <h2>Nsukka Legends FA</h2>
-
-            <img src="images/Nsukka legends_edited.jpg"
-                 alt="Nsukka Legends FA"
-                 width="400">
-
-            <p>
-                Nsukka Legends Football and Vocational Academy is a football
-                and vocational development organization focused on developing
-                young talents while providing opportunities for personal,
-                educational and professional growth.
-            </p>
-
-            <p>
-                I have been involved in the administration, development,
-                digital media and management of the academy.
-            </p>
-
-            <p>
-                The academy also has an official website where you can learn
-                more about its activities, programs and development.
-            </p>
-
-            <!-- EXTERNAL WEBSITE LINK -->
-            <a href="https://nsukkalegendsfa.com" target="_blank">
-                Visit Nsukka Legends FA Website
-            </a>
-
-        </section>
 
 
-        <!-- PERSONAL PORTFOLIO -->
-        <section>
+            <!-- NAVIGATION LINKS -->
+            <ul class="nav-links">
 
-            <h2>Personal Portfolio Website</h2>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
 
-            <p>
-                This website is one of my projects. I am building it to
-                showcase my skills, experience, education, achievements and
-                future projects.
-            </p>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
 
-            <p>
-                The website is being developed using HTML and will later
-                include CSS and JavaScript.
-            </p>
+                <li>
+                    <a href="projects.html" class="active">Projects</a>
+                </li>
 
-        </section>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
 
-
-        <!-- BUSINESS MANAGEMENT SYSTEM -->
-        <section>
-
-            <h2>Business Management System</h2>
-
-            <p>
-                A web-based business management project designed to help
-                business owners monitor workers and record daily business
-                activities.
-            </p>
-
-            <p>
-                The project is focused on creating a simple and effective
-                digital solution for business management.
-            </p>
-
-        </section>
-
-
-        <!-- WEB DEVELOPMENT PROJECT -->
-        <section>
-
-            <h2>Web Development Projects</h2>
-
-            <p>
-                I am currently developing different websites and applications
-                as I continue to improve my skills in web development.
-            </p>
-
-            <ul>
-                <li>Personal Portfolio Website</li>
-                <li>Business Management System</li>
-                <li>Football Academy Website</li>
-                <li>Other web development projects</li>
             </ul>
 
+
+            <!-- HIRE ME BUTTON -->
+            <div class="login-container">
+
+                <a href="contact.html" class="login-btn">
+                    Hire Me
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="projects-main">
+
+
+        <!-- PROJECT PAGE INTRODUCTION -->
+
+        <section class="projects-header">
+
+            <h1>My Projects</h1>
+
+            <p>
+                Welcome to my projects section. Here are some of the
+                websites, applications and digital projects I have worked
+                on or am currently developing as I continue to improve
+                my skills in technology and web development.
+            </p>
+
         </section>
 
 
-        <!-- CALL TO ACTION -->
-        <section>
 
-            <h2>Have a Project in Mind?</h2>
+        <!-- =========================
+             PROJECT CARDS
+        ========================== -->
+
+        <section class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <article class="project-card">
+
+                <img
+                    src="images/Nsukka legends_edited.jpg" 
+                    alt="Nsukka Legends FA Website"
+                    class="project-image">
+    
+                <div class="project-content">
+
+                    <h2>
+                        Nsukka Legends FA Website
+                    </h2>
+
+                    <p>
+                        A football academy website created to showcase
+                        Nsukka Legends FA, its activities, programs,
+                        players and development opportunities.
+                    </p>
+
+                    <p>
+                        The website provides information about the academy
+                        and helps visitors learn more about its football
+                        development programs.
+                    </p>
+
+                    <a
+                        href="https://nsukkalegendsfa.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-button">
+
+                        Visit Website
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 2 -->
+
+            <article class="project-card">
+
+                <img
+                    src="images/meshack.jpg" 
+                    alt="Personal portfolio Website"
+                    class="project-image">
+                    
+
+                <div class="project-content">
+
+                    <h2>
+                        Personal Portfolio Website
+                    </h2>
+
+                    <p>
+                        This is my personal portfolio website, created
+                        to showcase my skills, education, experience,
+                        achievements and projects.
+                    </p>
+
+                    <p>
+                        I am developing the website using HTML and CSS,
+                        while continuing to learn JavaScript and other
+                        web development technologies.
+                    </p>
+
+                    <a
+                        href="index.html"
+                        class="project-button">
+
+                        View Website
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 3 -->
+
+            <article class="project-card">
+
+                <img
+                    src="images/istockphoto-1305999733-1024x1024.jpg" 
+                    alt="Business Management Website"
+                    class="project-image">
+
+                <div class="project-content">
+
+                    <h2>
+                        Business Management System
+                    </h2>
+
+                    <p>
+                        A web-based business management project designed
+                        to help business owners monitor workers and
+                        record daily business activities.
+                    </p>
+
+                    <p>
+                        The project focuses on creating an effective
+                        digital solution for managing business operations.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="project-button">
+
+                        View Project
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 4 -->
+
+            <article class="project-card">
+
+                <div class="project-icon">
+                    🌐
+                </div>
+
+                <div class="project-content">
+
+                    <h2>
+                        Web Development Projects
+                    </h2>
+
+                    <p>
+                        I am currently developing different websites
+                        and applications as I continue to improve my
+                        skills in web development.
+                    </p>
+
+                    <ul class="project-list">
+
+                        <li>
+                            Personal Portfolio Website
+                        </li>
+
+                        <li>
+                            Business Management System
+                        </li>
+
+                        <li>
+                            Football Academy Website
+                        </li>
+
+                        <li>
+                            Other Web Development Projects
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             CALL TO ACTION
+        ========================== -->
+
+        <section class="project-cta">
+
+            <h2>
+                Have a Project in Mind?
+            </h2>
 
             <p>
-                If you would like to work with me or discuss a project,
-                feel free to get in touch.
+                If you would like to work with me, collaborate on a project
+                or simply discuss an idea, feel free to get in touch.
             </p>
 
-            <a href="contact.html">
+            <a
+                href="contact.html"
+                class="project-button">
+
                 Contact Me
+
             </a>
 
         </section>
+
 
     </main>
 
 
-    <!-- FOOTER -->
-    <footer>
 
-        <p>
-            &copy; 2026 Meshack Ogonna Ugwuishi. All Rights Reserved.
-        </p>
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <!-- FOOTER ABOUT -->
+
+            <div class="footer-about">
+
+                <h3>
+                    Meshack Ogonna Ugwuishi
+                </h3>
+
+                <p>
+                    Computer Science student, web developer,
+                    football administrator and digital content creator.
+                </p>
+
+            </div>
+
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- FOOTER CONTACT -->
+
+            <div class="footer-contact">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    <a href="mailto:hogonna@gmail.com">
+                        hogonna@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    Enugu, Nigeria
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Meshack Ogonna Ugwuishi.
+                All Rights Reserved.
+            </p>
+
+        </div>
 
     </footer>
+
 
 </body>
 

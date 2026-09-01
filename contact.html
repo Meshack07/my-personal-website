@@ -59,6 +59,11 @@
 
             </ul>
 
+             <!-- DARK MODE BUTTON -->
+<button class="theme-toggle" type="button">
+    🌙
+</button>
+
 
             <!-- HIRE ME BUTTON -->
 
@@ -235,6 +240,7 @@
 
                     <form
                         class="contact-form"
+                        id="contactForm"
                         action="#"
                         method="post">
 
@@ -253,6 +259,15 @@
                                 name="name"
                                 placeholder="Enter your name"
                                 required>
+                                <button
+    type="submit"
+    class="contact-submit">
+
+    Send Message
+
+</button>
+
+<p id="formMessage" class="form-message"></p>
 
                         </div>
 
@@ -314,6 +329,7 @@
                         <!-- SUBMIT -->
 
                         <button
+            
                             type="submit"
                             class="contact-submit">
 
@@ -464,5 +480,6 @@
 
 
 </body>
+<script src="js/app.js"></script>
 
 </html>

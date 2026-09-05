@@ -68,60 +68,51 @@ const formMessage = document.querySelector("#formMessage");
 
 if (contactForm && formMessage) {
 
-    contactForm.addEventListener("submit", function (event) {
+    contactForm.addEventListener("submit", async function (event) {
 
         event.preventDefault();
 
 
-        // GET THE VALUES FROM THE FORM
-
         const name = document.querySelector("#name").value.trim();
+
         const email = document.querySelector("#email").value.trim();
+
         const subject = document.querySelector("#subject").value.trim();
+
         const message = document.querySelector("#message").value.trim();
 
 
-        // CHECK NAME
+        // VALIDATION
 
         if (name === "") {
 
-            formMessage.textContent = "❌ Please enter your full name.";
+            formMessage.textContent =
+                "❌ Please enter your full name.";
 
             return;
+
         }
 
-
-        // CHECK EMAIL
 
         if (email === "") {
 
-            formMessage.textContent = "❌ Please enter your email address.";
+            formMessage.textContent =
+                "❌ Please enter your email address.";
 
             return;
+
         }
 
-
-        // CHECK SUBJECT
 
         if (subject === "") {
 
-            formMessage.textContent = "❌ Please enter a subject.";
+            formMessage.textContent =
+                "❌ Please enter a subject.";
 
             return;
+
         }
 
-
-        // CHECK MESSAGE
-
-        if (message === "") {
-
-            formMessage.textContent = "❌ Please enter your message.";
-
-            return;
-        }
-
-
-        // CHECK MESSAGE LENGTH
 
         if (message.length < 10) {
 
@@ -129,13 +120,67 @@ if (contactForm && formMessage) {
                 "❌ Your message must be at least 10 characters.";
 
             return;
+
         }
 
 
-        // SUCCESS
+        // SEND TO BACKEND
 
-        formMessage.textContent =
-            "✅ Message submitted successfully! Thank you for reaching out.";
+        try {
+
+            formMessage.textContent =
+                "Sending message...";
+
+
+            const response = await fetch("/api/contact", {
+
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+
+                    name: name,
+
+                    email: email,
+
+                    subject: subject,
+
+                    message: message
+
+                })
+
+            });
+
+
+            const result = await response.json();
+
+
+            if (result.success) {
+
+                formMessage.textContent =
+                    "✅ Message sent successfully!";
+
+                contactForm.reset();
+
+            } else {
+
+                formMessage.textContent =
+                    "❌ " + result.message;
+
+            }
+
+
+        } catch (error) {
+
+            console.error(error);
+
+            formMessage.textContent =
+                "❌ Unable to connect to the server.";
+
+        }
 
     });
 

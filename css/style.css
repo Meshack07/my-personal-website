@@ -1135,36 +1135,51 @@ header {
     }
 
 
+   /* ABOUT */
 
-    /* ABOUT */
+.about-section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    gap: 40px;
+    box-sizing: border-box;
+}
 
-    .about-section {
+.about-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
 
-        width: 90%;
+.about-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-        flex-direction: column;
+.about-image img {
+    width: 280px;
+    height: 280px;
+    max-width: 100%;
+    object-fit: cover;
+}
 
-        text-align: center;
+.about-content h2 {
+    font-size: 34px;
+    line-height: 1.2;
+}
 
-        padding: 70px 0;
-
-        gap: 40px;
-    }
-
-
-    .about-image img {
-
-        width: 280px;
-
-        height: 280px;
-    }
-
-
-    .about-content h2 {
-
-        font-size: 34px;
-    }
-
+.about-content p {
+    width: 100%;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: left;
+}
 
 
     /* SECTION HEADINGS */
@@ -2938,4 +2953,156 @@ body.dark-mode footer h3,
 body.dark-mode footer p,
 body.dark-mode footer a {
     color: #ffffff;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+/* Tablets */
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .about-content {
+        gap: 30px;
+    }
+}
+
+
+/* Mobile phones */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .social-links {
+        gap: 15px;
+    }
+
+}
+
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* ABOUT - MOBILE */
+
+    .about-hero {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        padding: 50px 0;
+        box-sizing: border-box;
+    }
+
+    .about-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-image img {
+        width: 280px;
+        height: 280px;
+        max-width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .about-text {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-text h1 {
+        font-size: 40px;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .about-text p {
+        width: 100%;
+        font-size: 17px;
+        line-height: 1.7;
+        text-align: left;
+        margin-bottom: 18px;
+    }
 }

@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/Meshack07/my-personal-website/issues"
   },
-  "homepage": "https://github.com/Meshack07/my-personal-website#readme"
+  "homepage": "https://github.com/Meshack07/my-personal-website#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemailer": "^10.0.0"
+  }
 }

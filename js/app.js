@@ -1,4 +1,6 @@
+// ==============================
 // MOBILE MENU
+// ==============================
 
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
@@ -14,7 +16,9 @@ if (menuToggle) {
 }
 
 
+// ==============================
 // DARK MODE
+// ==============================
 
 const themeToggle = document.querySelector(".theme-toggle");
 
@@ -61,7 +65,10 @@ if (themeToggle) {
 
 }
 
+
+// ==============================
 // CONTACT FORM
+// ==============================
 
 const contactForm = document.querySelector("#contactForm");
 const formMessage = document.querySelector("#formMessage");
@@ -82,7 +89,9 @@ if (contactForm && formMessage) {
         const message = document.querySelector("#message").value.trim();
 
 
+        // ==============================
         // VALIDATION
+        // ==============================
 
         if (name === "") {
 
@@ -124,7 +133,9 @@ if (contactForm && formMessage) {
         }
 
 
-        // SEND TO BACKEND
+        // ==============================
+        // SEND TO LIVE RENDER BACKEND
+        // ==============================
 
         try {
 
@@ -132,31 +143,38 @@ if (contactForm && formMessage) {
                 "Sending message...";
 
 
-            const response = await fetch("/api/contact", {
+            const response = await fetch(
+                "https://my-personal-website-ak63.onrender.com/api/contact",
+                {
 
-                method: "POST",
+                    method: "POST",
 
-                headers: {
-                    "Content-Type": "application/json"
-                },
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
 
-                body: JSON.stringify({
+                    body: JSON.stringify({
 
-                    name: name,
+                        name: name,
 
-                    email: email,
+                        email: email,
 
-                    subject: subject,
+                        subject: subject,
 
-                    message: message
+                        message: message
 
-                })
+                    })
 
-            });
+                }
+            );
 
 
             const result = await response.json();
 
+
+            // ==============================
+            // SUCCESS
+            // ==============================
 
             if (result.success) {
 
@@ -185,6 +203,11 @@ if (contactForm && formMessage) {
     });
 
 }
+
+
+// ==============================
+// SCROLL REVEAL ANIMATION
+// ==============================
 
 const revealElements = document.querySelectorAll(".reveal");
 
